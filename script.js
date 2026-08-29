@@ -5,10 +5,15 @@ form.addEventListener("submit", function (event) {
   const submitButton = form.querySelector(".submit-btn");
   submitButton.disabled = true;
   submitButton.innerHTML = "Joining...";
-  emailjs.sendForm(
+  const templateParams = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value
+  };
+  emailjs.send(
     "service_d1e80eh",
     "template_q0t391p",
-    form
+    templateParams
   )
   .then(function () {
     form.style.display = "none";
@@ -18,12 +23,13 @@ form.addEventListener("submit", function (event) {
   .catch(function (error) {
     console.error("EmailJS error:", error);
     submitButton.disabled = false;
-    submitButton.innerHTML = 'Join the Waitlist <span>→</span>';
+    submitButton.innerHTML =
+      'Join the Waitlist <span>→</span>';
     alert(
       "Something went wrong. Please try again."
     );
   });
-});
+}); 
 /* WHATSAPP SHARE */
 document.getElementById("whatsappBtn").addEventListener("click", function () {
   const message =
