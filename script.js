@@ -54,20 +54,30 @@ function getShareUrl() {
   return window.location.href.split("#")[0] + "#waitlist";
 }
 
+// Replace your current WhatsApp share code with this
+
 const whatsappButton = document.getElementById("whatsappBtn");
+
 if (whatsappButton) {
   whatsappButton.addEventListener("click", function () {
+    const shareUrl =
+      window.location.href.split("#")[0] + "#waitlist";
+
     const message =
-      "The revelation is coming… 👀\n\n" +
+      "The cover is veiled. The message is not. 👀\n\n" +
       "Join the private waitlist and be among the first to know:\n" +
-      getShareUrl();
+      shareUrl;
+
+    const whatsappUrl =
+      "https://wa.me/?text=" + encodeURIComponent(message);
+
     window.open(
-      "https://wa.me/?text=" + encodeURIComponent(message),
+      whatsappUrl,
       "_blank",
       "noopener,noreferrer"
     );
   });
-}
+} 
 
 const copyButton = document.getElementById("copyBtn");
 if (copyButton) {
