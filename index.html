@@ -1,198 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Revelation Is Coming</title>
-  <meta name="description" content="Something is about to be revealed. Join the waitlist for Mystery of the First by Joshua Oyewole.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- HERO -->
-  <header class="hero">
-    <nav class="navbar">
-      <div class="brand"></div>
-      <a href="#waitlist" class="nav-btn">
-        Join Waitlist
-      </a>
-    </nav>
-    <div class="hero-content">
-      <p class="eyebrow">A NEW REVELATION IS COMING</p>
-      <h1>coming soon<h1>
-      <p class="subtitle">
-        The Forgotten Revelation
-      </p>
-      <div class="book-wrapper">
-        <div class="glow"></div>
-        <img
-          src="assets/veiled-cover.png"
-          alt="Veiled cover "
-          class="book-cover"
-        >
-      </div>
-      <p class="hero-text">
-        Something is about to be revealed.
-      </p>
-      <a href="#waitlist" class="primary-btn">
-        Enter the Waitlist <span>→</span>
-      </a>
-    </div>
-    <div class="scroll-indicator">
-      <span></span>
-      Scroll to discover
-    </div>
-  </header>
-  <!-- INTRO -->
-  <section class="intro">
-    <!-- <p class="section-label">THE MYSTERY</p>
-    <h2>
-      Why does being <em>first</em> matter?
-    </h2>
-    <p class="section-text">
-      There are things about being first that many families never stop
-      to consider. Patterns, responsibilities, decisions and revelations
-      can shape generations in ways we often overlook.
-    </p> -->
-    <!-- <div class="divider"></div>
-    <p class="small-text">
-      The full revelation is coming.
-    </p>
-  </section>
-  <!-- AUDIENCE -->
-  <section class="audience">
-    <div class="section-heading">
-      <p class="section-label">THIS IS FOR YOU</p>
-      <h2>
-        One book.<br>
-        <em>Three perspectives.</em>
-      </h2>
-    </div>
-    <div class="audience-grid">
-      <article class="audience-card">
-        <span>01</span>
-        <h3>Firstborns</h3>
-        <p>
-          Discover a deeper perspective on what it means to be first.
-        </p>
-      </article>
-      <article class="audience-card">
-        <span>02</span>
-        <h3>Parents</h3>
-        <p>
-          Consider how decisions can influence the lives and futures
-          of your children.
-        </p>
-      </article>
-      <article class="audience-card">
-        <span>03</span>
-        <h3>Families</h3>
-        <p>
-          See familiar family patterns through a different lens.
-        </p>
-      </article>
-    </div>
-  </section> -->
-  <!-- WAITLIST -->
-  <section class="waitlist" id="waitlist">
-    <div class="waitlist-box">
-      <p class="section-label">THE ANTICIPATION</p>
-      <h2>
-        Be among the<br>
-        <em>first to know.</em>
-      </h2>
-      <p class="waitlist-description">
-        Join the official waitlist and receive updates as we move
-        closer to the release of <strong></strong>
-      </p>
-      <form id="waitlistForm">
-        <div class="input-group">
-          <label for="name">Full Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your full name"
-            required
-          >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0908">
+    <title>The Revelation Is Coming | Joshua Oyewole</title>
+    <meta
+      name="description"
+      content="A forthcoming book by Joshua Oyewole exploring firstborn identity, family patterns, and the truths passed from one generation to the next."
+    >
+    <meta property="og:title" content="The Revelation Is Coming">
+    <meta
+      property="og:description"
+      content="The cover is veiled. The message is not. Join the private waitlist."
+    >
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="hero" id="top">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="The Revelation Is Coming home">
+          THE REVELATION
+        </a>
+        <a class="nav-btn" href="#waitlist">Join the waitlist</a>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">A new book is being prepared</p>
+          <h1>The revelation <em>is coming.</em></h1>
+          <p class="hero-lede">
+            The cover is veiled. The message is not.
+          </p>
+          <p class="hero-description">
+            A forthcoming book exploring firstborn identity, family patterns,
+            and the truths passed from one generation to the next.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#waitlist">
+              Join the private waitlist <span aria-hidden="true">→</span>
+            </a>
+            <span class="release-note">Release date to be announced</span>
+          </div>
         </div>
-        <div class="input-group">
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@example.com"
-            required
+
+        <div class="book-stage" aria-label="Veiled book cover">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="glow"></div>
+          <img
+            src="assets/veiled-cover.png"
+            alt="A veiled book cover"
+            class="book-cover"
           >
-        </div>
-        <div class="input-group">
-          <label for="phone">WhatsApp Number</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="+234 800 000 0000"
-            required
-          >
-        </div>
-        <button type="submit" class="submit-btn">
-          Join the Waitlist <span>→</span>
-        </button>
-        <p class="privacy">
-          Your information will be kept private.
-        </p>
-      </form>
-      <!-- SUCCESS MESSAGE -->
-      <div class="success-message" id="successMessage">
-        <div class="success-icon">✓</div>
-        <h3>You're on the list.</h3>
-        <p>
-          The revelation  is coming. Stay close.
-        </p>
-        <div class="share-box">
-          <p>Help spread the anticipation.</p>
-          <button id="whatsappBtn">
-            Share on WhatsApp
-          </button>
-          <button id="copyBtn">
-            Copy Invite Link
-          </button>
+          <p class="book-caption">Some things are revealed in time.</p>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- FINAL CTA -->
-  <section class="final-section">
-    <p class="section-label">COMING SOON</p>
-    <h2>
-      The revelation<br>
-      <em>is coming.</em>
-    </h2>
-  
-    <a href="#waitlist" class="primary-btn">
-      Join the Waitlist →
-    </a>
-  </section>
-  <!-- FOOTER -->
-  <footer>
-    <div>
-      
-      <span>The Forgotten Revelation</span>
-    </div>
-    <p>
-      © 2026 Joshua Oyewole
-    </p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  emailjs.init({
-    publicKey: "QQqcUEjSf0PrLF8QD"
-  });
-</script>
-<script src="script.js"></script>
-  
-</body>
+
+      <a class="scroll-indicator" href="#mystery">
+        <span></span>
+        Discover more
+      </a>
+    </header>
+
+    <main>
+      <section class="mystery section" id="mystery">
+        <div class="section-inner narrow">
+          <p class="section-label">The mystery</p>
+          <h2>What does being <em>first</em> ask of us?</h2>
+          <p class="section-text">
+            There are responsibilities, expectations, and patterns that can
+            quietly shape a family. This book invites you to look at them
+            from a deeper perspective.
+          </p>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="quiet-line">The full revelation will be unveiled in time.</p>
+        </div>
+      </section>
+
+      <section class="audience section" aria-labelledby="audience-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-label">The conversation begins here</p>
+            <h2 id="audience-title">One book.<br><em>Three perspectives.</em></h2>
+          </div>
+
+          <div class="audience-grid">
+            <article class="audience-card">
+              <span class="card-number">01</span>
+              <h3>Firstborns</h3>
+              <p>
+                Consider the expectations, responsibilities, and identity
+                connected to being first.
+              </p>
+            </article>
+            <article class="audience-card">
+              <span class="card-number">02</span>
+              <h3>Parents</h3>
+              <p>
+                Reflect on how family decisions can influence the lives and
+                futures of your children.
+              </p>
+            </article>
+            <article class="audience-card">
+              <span class="card-number">03</span>
+              <h3>Families</h3>
+              <p>
+                See familiar patterns through a different lens—and begin a
+                more honest conversation.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="waitlist section" id="waitlist" aria-labelledby="waitlist-title">
+        <div class="waitlist-box">
+          <div class="waitlist-mark" aria-hidden="true">
+            <img src="assets/ant.png" alt="">
+          </div>
+          <p class="section-label">The anticipation</p>
+          <h2 id="waitlist-title">Be among the<br><em>first to know.</em></h2>
+          <p class="waitlist-description">
+            Join the private waitlist for the first official announcement,
+            exclusive previews, and news when the book is ready to be unveiled.
+          </p>
+
+          <form id="waitlistForm" novalidate>
+            <div class="input-group">
+              <label for="name">Full name <span>(optional)</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                autocomplete="name"
+              >
+            </div>
+            <div class="input-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              >
+            </div>
+            <div class="input-group">
+              <label for="phone">WhatsApp number <span>(optional)</span></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+234 800 000 0000"
+                autocomplete="tel"
+                inputmode="tel"
+              >
+            </div>
+            <label class="consent">
+              <input type="checkbox" id="whatsappConsent" name="whatsappConsent">
+              <span>I’m happy to receive occasional updates on WhatsApp.</span>
+            </label>
+            <button type="submit" class="submit-btn">
+              Join the waitlist <span aria-hidden="true">→</span>
+            </button>
+            <p class="privacy">
+              Your details stay private and will only be used for book updates.
+            </p>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="success-message" id="successMessage" aria-live="polite" tabindex="-1">
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h3>You’re on the list.</h3>
+            <p>
+              The cover remains veiled, but you’ll be among the first to know
+              when the revelation is ready.
+            </p>
+            <div class="share-box">
+              <p>Help spread the anticipation.</p>
+              <button type="button" id="whatsappBtn">Share on WhatsApp</button>
+              <button type="button" id="copyBtn">Copy invite link</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faith-note section">
+        <div class="section-inner narrow">
+          <p class="section-label">Until then</p>
+          <blockquote>
+            “The right time will reveal what preparation began.”
+          </blockquote>
+          <p class="section-text">
+            Preparing faithfully. Trusting God’s timing.
+          </p>
+        </div>
+      </section>
+
+      <section class="final-section section">
+        <p class="section-label">Stay close</p>
+        <h2>The veil will lift<br><em>when the time is right.</em></h2>
+        <a class="primary-btn" href="#waitlist">Join the waitlist <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#top" class="footer-brand">THE REVELATION</a>
+      <p>A forthcoming book by Joshua Oyewole</p>
+      <p>© <span id="year">2026</span> Joshua Oyewole</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      emailjs.init({ publicKey: "QQqcUEjSf0PrLF8QD" });
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
